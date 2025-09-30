@@ -1,0 +1,14 @@
+{
+  "name": "ei-practise",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node designpattern/BehaviouralPatternDesign/Observer/main.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.6.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
