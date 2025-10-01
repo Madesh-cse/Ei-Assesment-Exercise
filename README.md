@@ -106,11 +106,11 @@ Viewer → read
 1. Install Dependencies
    npm install
 
-2 . Run in the Terminal
+2. Run in the Terminal
     npm run start:strategy
     npm run start:observer
 
-3.  git clone command
+3. git clone command
     git clone  https://github.com/Madesh-cse/Ei-Assesment-Exercise.git
 ---------------------------------------------------------------------------------------------------------
 
