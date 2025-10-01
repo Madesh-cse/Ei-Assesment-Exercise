@@ -1,182 +1,181 @@
 # Exercise 1: Design Patterns
-  📌 Overview
 
-This project demonstrates the understanding of Software Design Patterns through practical use cases coded in TypeScript.
+## 📌 Overview
+This project demonstrates the understanding of **Software Design Patterns** through practical use cases coded in **TypeScript**.
 
 Patterns are grouped into three categories:
 
- 1.Behavioural Design Patterns → Define communication and responsibilities between objects.
+1. **Behavioural Design Patterns** → Define communication and responsibilities between objects.  
+2. **Creational Design Patterns** → Handle object creation in a flexible and reusable way.  
+3. **Structural Design Patterns** → Deal with object composition.  
 
- 2.Creational Design Patterns → Handle object creation in a flexible and reusable way.
+**Implemented Patterns:**
+- 2 Behavioural Patterns → Observer, Strategy  
+- 2 Creational Patterns → Singleton, Factory  
+- 2 Structural Patterns → Adapter, Decorator  
 
- 3.Structural Design Patterns → Deal with object composition (to be implemented).
+---
 
-In this assignment:
+## 🎭 Behavioural Design Patterns
 
- 1.Implemented 2 Behavioural Patterns → Observer, Strategy
+### 1. Observer Pattern – Ride-Sharing App Notifications
+**Problem:** A ride-sharing app must notify multiple users (riders, drivers, admins) whenever ride status changes.  
 
-2. Implemented 2 Creational Patterns → Singleton, Factory
+**Solution:** The Observer Pattern allows observers (users) to subscribe/unsubscribe from ride status updates. The ride (subject) automatically notifies all observers when its state changes.  
 
-3. Implemented 2 Structural  Patterns → Adapter, Decorator
+**Key Concepts:**
+- Riders act as subjects, while drivers are observers subscribing for ride requests.  
+- All subscribed drivers in the same location receive automatic notifications.  
+- Loose coupling between riders and drivers.  
 
------------------------------------------------------------------------------------------------------------------------------
+---
 
-🎭 Behavioural Design Patterns
-1. Observer Pattern – Ride-Sharing App Notifications
+### 2. Strategy Pattern – CryptoBot Trading Strategy
+**Problem:** A crypto trading bot should support different trading strategies (aggressive, conservative, balanced) and be able to switch strategies dynamically.  
 
-Problem: A ride-sharing app must notify multiple users (riders, drivers, admins) whenever ride status changes.
+**Solution:** The Strategy Pattern encapsulates each trading algorithm in its own class and lets the bot swap strategies at runtime.  
 
-Solution: The Observer Pattern allows observers (users) to subscribe/unsubscribe from ride status updates. The ride (subject) automatically notifies all observers when its state changes.
+**Implemented Strategies:**
+- **AggressiveStrategy** → Buy aggressively  
+- **ConservativeStrategy** → Invest cautiously  
+- **BalancedStrategy** → Buy and hold  
 
-🔑 Key Concepts
+**Key Concepts:**
+- Encapsulates algorithms in separate classes  
+- Strategies interchangeable at runtime  
+- Reduces conditional logic, promotes flexibility  
 
-Riders act as subjects, while drivers are observers that subscribe for ride requests.
+---
 
-When a rider requests a driver, all subscribed drivers in the same location get automatic notifications.
+## 🏗️ Creational Design Patterns
 
-The design ensures loose coupling, since riders don’t directly depend on driver logic.
+### 1. Singleton Pattern – Cache Management System
+**Problem:** Ensure only one cache instance exists to avoid inconsistency.  
 
+**Solution:** The Singleton Pattern ensures a single instance of the cache manager exists and provides global access.  
 
-2. Strategy Pattern – CryptoBot Trading Strategy
+**Key Concepts:**
+- Single instance with global access  
+- Centralized state management  
+- Controls resource usage  
 
-Problem: A crypto trading bot should support different trading strategies (aggressive, conservative, balanced) and be able to switch strategies dynamically.
+---
 
-Solution: The Strategy Pattern encapsulates each trading algorithm in its own class and lets the bot swap strategies at runtime.
+### 2. Factory Pattern – Role-Based Access Control
+**Problem:** Different users (Admin, Editor, Viewer) have different access permissions. Hardcoding roles makes the code rigid.  
 
-Implemented Strategies:
+**Solution:** The Factory Pattern centralizes creation logic and returns the correct role object based on input.  
 
-1.AggressiveStrategy → Buy more aggressively
+**Implemented Roles:**
+- **Admin** → create, read, update, delete  
+- **Editor** → read, update  
+- **Viewer** → read  
 
-2.ConservativeStrategy → Invest cautiously
+**Key Concepts:**
+- Centralizes object creation  
+- Hides instantiation logic from client code  
+- Flexible and scalable  
 
----------------------------------------------------------------------------------------------
+---
 
-🏗️ Creational Design Patterns
-1. Singleton Pattern – Cache Management System
+## 🧩 Structural Design Patterns
 
-Problem: A cache system should be shared across the whole application. Multiple instances would lead to inconsistency.
+### 1. Adapter Pattern – Payment Gateway Adapter
+**Problem:** Integrate multiple payment providers (PayPal, Stripe, Razorpay) with a common interface.  
 
-Solution: The Singleton Pattern ensures only one instance of the cache manager exists.
+**Key Concepts:**
+- Adapts incompatible interfaces to a standard interface  
+- Allows new providers to be added easily  
+- Promotes code reusability and flexibility  
 
+**Program Name:** `Payment Gateway Adapter`  
 
-2. Factory Pattern – Role-Based Access Control
+---
 
-Problem: Different users (Admin, Editor, Viewer) have different access permissions. Hardcoding roles makes the code rigid.
+### 2. Decorator Pattern – Text Formatting Decorator
+**Problem:** Dynamically add formatting (bold, italic, underline, color) to text.  
 
-Solution: The Factory Pattern centralizes creation logic and returns the correct role object based on input.
+**Key Concepts:**
+- Adds behavior dynamically without modifying the original class  
+- Supports flexible, stacked, and combinable enhancements  
+- Follows Open/Closed Principle  
 
-Roles Implemented:
+**Program Name:** `Text Formatting Decorator`  
 
-Admin → create, read, update, delete
+---
 
-Editor → read, update
-
-Viewer → read
-
---------------------------------------------------------------------------------------------------------------
-
-🧩 Structural Design Patterns
-
-1. Adapter Pattern – Payment Gateway Adapter
-
-   Problem: Integrate multiple payment providers (PayPal, Stripe, Razorpay) with a common interface.
-   Key Concepts:
-
-   Adapts incompatible interfaces to a standard interface
-
-   Allows new payment providers to be added easily
-
-   Promotes code reusability and flexibility
-
-2. Decorator Pattern – Text Formatting Decorator
-
-   Problem: Dynamically add formatting (bold, italic, underline, color) to text.
-   Key Concepts:
-
-   Adds behavior to objects dynamically without modifying the original class
-
-   Supports flexible, stacked, and combinable enhancements
-
-   Follows Open/Closed Principle
-
- ----------------------------------------------------------------------------------------------------
-
- How to Run the Programs
- 
-1. Install Dependencies
-   npm install
-
-2. Run in the Terminal
-
-    npm run start:strategy
-    
-    npm run start:observer
-
-3. git clone command
-    git clone  https://github.com/Madesh-cse/Ei-Assesment-Exercise.git
----------------------------------------------------------------------------------------------------------
-
-🛰️# Exercise 2: Problem Statements for Mini-projects – Mars Rover Simulation  
-
-  A TypeScript mini-project that simulates the movement of a Mars Rover on a grid.
-  It is built as a solution to Exercise 2: Problem Statements for Mini-projects, following global coding standards such as:
-
-  1.Modular design (each class in its own file)
-
-  2.Command pattern
-
-  3.Logging mechanism
-
-  4.Exception handling
-
-  5.Defensive programming
-
-  6.Optimized performance
-
-  📌 Problem Statement
-
-   The Mars Rover is placed on a rectangular grid.
-   It can:
-
-   1.Move forward (M)
-
-   2.Turn left (L)
-
-   3.Turn right (R)
-
-  The rover must detect obstacles and report its final position and orientation.
-
-  ⚙️ Features
-
- ✅ Well-structured modular code
- ✅ Command Pattern to execute rover moves
- ✅ Logging mechanism with timestamps
- ✅ Exception handling for invalid inputs & grid boundaries
- ✅ Obstacle detection & safe movement
- ✅ No infinite loops (dynamic command input)
- ✅ Easily extensible for new features
-
- ## Run Instructions
+## 🚀 How to Run the Programs
 
 ### 1. Install Dependencies
+
 npm install
 
-2. Run in Development Mode
-   npm run start
+2. Run TypeScript Programs with ts-node (ESM)
+# Behavioural Patterns
+node --loader ts-node/esm DesignPattern/BehaviouralPatternDesign/Strategy-Pattern/main.ts
+node --loader ts-node/esm DesignPattern/BehaviouralPatternDesign/Observer-Pattern/main.ts
 
-Example Input
+# Creational Patterns
+node --loader ts-node/esm DesignPattern/CreationalPatternDesign/Singleton/main.ts
+node --loader ts-node/esm DesignPattern/CreationalPatternDesign/Factory/main.ts
+
+# Structural Patterns
+node --loader ts-node/esm DesignPattern/StructuralPatternDesign/Adapter/main.ts
+node --loader ts-node/esm DesignPattern/StructuralPatternDesign/Decorator/main.ts
+
+3. Clone Repository
+
+git clone https://github.com/Madesh-cse/Ei-Assesment-Exercise.git
+
+----------------------------------------------------------------------------------------------
+
+Exercise 2: Problem Statements for Mini-projects – Mars Rover Simulation
+
+A TypeScript mini-project that simulates the movement of a Mars Rover on a grid.
+
+📌 Problem Statement
+
+The rover is placed on a rectangular grid.
+
+It can move forward (M), turn left (L), or turn right (R).
+
+Must detect obstacles and report its final position and orientation.
+
+⚙️ Features
+
+✅ Modular code (each class in its own file)
+
+✅ Command Pattern to execute moves
+
+✅ Logging mechanism with timestamps
+
+✅ Exception handling for invalid inputs & grid boundaries
+
+✅ Obstacle detection & safe movement
+
+✅ No infinite loops (dynamic command input)
+
+✅ Easily extensible for new features
+
+Run Instructions
+
+1.Install dependencies:
+
+npm install
+
+2. Run in development mode:
+
+npm run start
+
+Example Input:
 
 Grid Size: 10 x 10
-
 Starting Position: (0, 0, N)
-
 Commands: MMRMLM
-
 Obstacles: (2, 9), (5, 5)
 
-Example Output
+Example Output:
 
 Final Position: (3, 2, E)
 Status Report: "Rover is at (3, 2) facing East. No Obstacles detected."
 
-    
