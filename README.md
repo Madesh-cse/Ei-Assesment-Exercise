@@ -91,14 +91,14 @@ Viewer → read
 
 2. Decorator Pattern – Text Formatting Decorator
 
-Problem: Dynamically add formatting (bold, italic, underline, color) to text.
-Key Concepts:
+  Problem: Dynamically add formatting (bold, italic, underline, color) to text.
+  Key Concepts:
 
- Adds behavior to objects dynamically without modifying the original class
+  Adds behavior to objects dynamically without modifying the original class
 
- Supports flexible, stacked, and combinable enhancements
+  Supports flexible, stacked, and combinable enhancements
 
- Follows Open/Closed Principle
+  Follows Open/Closed Principle
 
  ----------------------------------------------------------------------------------------------------
 
