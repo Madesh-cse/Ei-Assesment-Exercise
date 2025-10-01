@@ -49,7 +49,6 @@ Implemented Strategies:
 
 2.ConservativeStrategy → Invest cautiously
 
-3.BalancedStrategy → Buy & hold
 ---------------------------------------------------------------------------------------------
 
 🏗️ Creational Design Patterns
