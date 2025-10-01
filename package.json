@@ -4,7 +4,14 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "start": "ts-node designpattern/BehaviouralPatternDesign/Observer/main.ts"
+    "start:strategy": "node --import \"data:text/javascript,import { register } from 'node:module'; import { pathToFileURL } from 'node:url'; register('ts-node/esm', pathToFileURL('./'));\" DesignPattern/BehaviouralPatternDesign/Strategy-Pattern/main.ts",
+    "start:observer": "node --import \"data:text/javascript,import { register } from 'node:module'; import { pathToFileURL } from 'node:url'; register('ts-node/esm', pathToFileURL('./'));\" DesignPattern/BehaviouralPatternDesign/Observer-Pattern/main.ts",
+
+    "start:singleton":"node --import \"data:text/javascript,import { register } from 'node:module'; import { pathToFileURL } from 'node:url'; register('ts-node/esm', pathToFileURL('./'));\" DesignPattern/CreationalPatternDesign/Singleton-Pattern/main.ts",
+    "start:factory":"node --import \"data:text/javascript,import { register } from 'node:module'; import { pathToFileURL } from 'node:url'; register('ts-node/esm', pathToFileURL('./'));\" DesignPattern/CreationalPatternDesign/Factory-Pattern/main.ts",
+    
+    "start:adapter":"node --import \"data:text/javascript,import { register } from 'node:module'; import { pathToFileURL } from 'node:url'; register('ts-node/esm', pathToFileURL('./'));\" DesignPattern/StructuralPatternDesign/Adapter-Pattern/main.ts",
+    "start:decorator":"node --import \"data:text/javascript,import { register } from 'node:module'; import { pathToFileURL } from 'node:url'; register('ts-node/esm', pathToFileURL('./'));\" DesignPattern/StructuralPatternDesign/Decorator-Pattern/main.ts"
   },
   "devDependencies": {
     "@types/node": "^24.6.0",

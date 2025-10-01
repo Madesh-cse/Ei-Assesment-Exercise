@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "start": "node --loader ts-node/esm Mars-rover/main.ts",
+    "dev": "ts-node Mars-rover/main.ts",
     "build": "tsc"
   },
   "devDependencies": {
