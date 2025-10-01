@@ -135,7 +135,7 @@ git clone https://github.com/Madesh-cse/Ei-Assesment-Exercise.git
 
 ----------------------------------------------------------------------------------------------
 
-Exercise 2: Problem Statements for Mini-projects – Mars Rover Simulation
+### Exercise 2: Problem Statements for Mini-projects – Mars Rover Simulation
 
 A TypeScript mini-project that simulates the movement of a Mars Rover on a grid.
 
