@@ -176,12 +176,16 @@ npm run start
 Example Input:
 
 Grid Size: 10 x 10
+
 Starting Position: (0, 0, N)
+
 Commands: MMRMLM
+
 Obstacles: (2, 9), (5, 5)
 
 Example Output:
 
 Final Position: (3, 2, E)
+
 Status Report: "Rover is at (3, 2) facing East. No Obstacles detected."
 
