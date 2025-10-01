@@ -87,8 +87,7 @@ Patterns are grouped into three categories:
 - Adapts incompatible interfaces to a standard interface  
 - Allows new providers to be added easily  
 - Promotes code reusability and flexibility  
-
-**Program Name:** `Payment Gateway Adapter`  
+ 
 
 ---
 
@@ -99,8 +98,7 @@ Patterns are grouped into three categories:
 - Adds behavior dynamically without modifying the original class  
 - Supports flexible, stacked, and combinable enhancements  
 - Follows Open/Closed Principle  
-
-**Program Name:** `Text Formatting Decorator`  
+ 
 
 ---
 
@@ -123,7 +121,14 @@ node --loader ts-node/esm DesignPattern/CreationalPatternDesign/Factory/main.ts
 node --loader ts-node/esm DesignPattern/StructuralPatternDesign/Adapter/main.ts
 node --loader ts-node/esm DesignPattern/StructuralPatternDesign/Decorator/main.ts
 
-3. Clone Repository
+
+3. Run in Terminal 
+
+   npm run start:strategy
+   npm run start: observer
+   
+
+4. Clone Repository
 
 git clone https://github.com/Madesh-cse/Ei-Assesment-Exercise.git
 
