@@ -1,5 +1,5 @@
-Exercise 1: Design Patterns
-📌 Overview
+# Exercise 1: Design Patterns
+  📌 Overview
 
 This project demonstrates the understanding of Software Design Patterns through practical use cases coded in TypeScript.
 
