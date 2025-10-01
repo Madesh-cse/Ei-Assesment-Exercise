@@ -107,7 +107,9 @@ Viewer → read
    npm install
 
 2. Run in the Terminal
+
     npm run start:strategy
+    
     npm run start:observer
 
 3. git clone command
