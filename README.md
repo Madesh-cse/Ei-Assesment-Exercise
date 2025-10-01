@@ -167,7 +167,7 @@ Must detect obstacles and report its final position and orientation.
 
  1. Install dependencies:
 
-   npm install
+    npm install
 
 2. Run in development mode:
 
