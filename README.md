@@ -80,25 +80,25 @@ Viewer → read
 
 1. Adapter Pattern – Payment Gateway Adapter
 
- Problem: Integrate multiple payment providers (PayPal, Stripe, Razorpay) with a common interface.
- Key Concepts:
+   Problem: Integrate multiple payment providers (PayPal, Stripe, Razorpay) with a common interface.
+   Key Concepts:
 
-  Adapts incompatible interfaces to a standard interface
+   Adapts incompatible interfaces to a standard interface
 
-  Allows new payment providers to be added easily
+   Allows new payment providers to be added easily
 
-  Promotes code reusability and flexibility
+   Promotes code reusability and flexibility
 
 2. Decorator Pattern – Text Formatting Decorator
 
-  Problem: Dynamically add formatting (bold, italic, underline, color) to text.
-  Key Concepts:
+   Problem: Dynamically add formatting (bold, italic, underline, color) to text.
+   Key Concepts:
 
-  Adds behavior to objects dynamically without modifying the original class
+   Adds behavior to objects dynamically without modifying the original class
 
-  Supports flexible, stacked, and combinable enhancements
+   Supports flexible, stacked, and combinable enhancements
 
-  Follows Open/Closed Principle
+   Follows Open/Closed Principle
 
  ----------------------------------------------------------------------------------------------------
 
