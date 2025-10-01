@@ -111,7 +111,7 @@ Viewer → read
     npm run start:observer
 
 3.  git clone command
-    git clone https://github.com/yourusername/DesignPatterns.git
+    git clone  https://github.com/Madesh-cse/Ei-Assesment-Exercise.git
 ---------------------------------------------------------------------------------------------------------
 
 🛰️# Exercise 2: Problem Statements for Mini-projects – Mars Rover Simulation  
