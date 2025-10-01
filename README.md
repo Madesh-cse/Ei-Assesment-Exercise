@@ -122,13 +122,14 @@ node --loader ts-node/esm DesignPattern/StructuralPatternDesign/Adapter/main.ts
 node --loader ts-node/esm DesignPattern/StructuralPatternDesign/Decorator/main.ts
 
 
-3. Run in Terminal 
+### 3. Run in Terminal 
 
    npm run start:strategy
+   
    npm run start: observer
    
 
-4. Clone Repository
+### 4. Clone Repository
 
 git clone https://github.com/Madesh-cse/Ei-Assesment-Exercise.git
 
