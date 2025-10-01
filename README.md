@@ -165,15 +165,15 @@ Must detect obstacles and report its final position and orientation.
 
 Run Instructions
 
-1.Install dependencies:
+ 1. Install dependencies:
 
-npm install
+   npm install
 
 2. Run in development mode:
 
-npm run start
+   npm run start
 
-Example Input:
+## Example Input:
 
 Grid Size: 10 x 10
 
@@ -183,7 +183,7 @@ Commands: MMRMLM
 
 Obstacles: (2, 9), (5, 5)
 
-Example Output:
+## Example Output:
 
 Final Position: (3, 2, E)
 
