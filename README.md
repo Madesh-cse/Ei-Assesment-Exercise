@@ -113,7 +113,7 @@ Viewer → read
      node --loader ts-node/esm DesignPattern/BehaviouralPatternDesign/Strategy-Pattern/main.ts
 ---------------------------------------------------------------------------------------------------------
 
-🛰️ Exercise 2: Problem Statements for Mini-projects – Mars Rover Simulation
+🛰️# Exercise 2: Problem Statements for Mini-projects – Mars Rover Simulation  
 
   A TypeScript mini-project that simulates the movement of a Mars Rover on a grid.
   It is built as a solution to Exercise 2: Problem Statements for Mini-projects, following global coding standards such as:
