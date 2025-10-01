@@ -115,11 +115,11 @@ node --loader ts-node/esm DesignPattern/BehaviouralPatternDesign/Observer-Patter
 
 # Creational Patterns
 node --loader ts-node/esm DesignPattern/CreationalPatternDesign/Singleton/main.ts
-node --loader ts-node/esm DesignPattern/CreationalPatternDesign/Factory/main.ts
+node --loader ts-node/esm DesignPattern/CreationalPatternDesign/Factory-Pattern/main.ts
 
 # Structural Patterns
 node --loader ts-node/esm DesignPattern/StructuralPatternDesign/Adapter/main.ts
-node --loader ts-node/esm DesignPattern/StructuralPatternDesign/Decorator/main.ts
+node --loader ts-node/esm DesignPattern/StructuralPatternDesign/Decorator-Pattern/main.ts
 
 
 ### 3. Run in Terminal 
