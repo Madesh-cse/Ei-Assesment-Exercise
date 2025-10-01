@@ -111,5 +111,69 @@ Viewer → read
 
   3. Example for your Strategy Pattern program:
      node --loader ts-node/esm DesignPattern/BehaviouralPatternDesign/Strategy-Pattern/main.ts
+---------------------------------------------------------------------------------------------------------
+
+🛰️ Exercise 2: Problem Statements for Mini-projects – Mars Rover Simulation
+
+  A TypeScript mini-project that simulates the movement of a Mars Rover on a grid.
+  It is built as a solution to Exercise 2: Problem Statements for Mini-projects, following global coding standards such as:
+
+  1.Modular design (each class in its own file)
+
+  2.Command pattern
+
+  3.Logging mechanism
+
+  4.Exception handling
+
+  5.Defensive programming
+
+  6.Optimized performance
+
+  📌 Problem Statement
+
+   The Mars Rover is placed on a rectangular grid.
+   It can:
+
+   1.Move forward (M)
+
+   2.Turn left (L)
+
+   3.Turn right (R)
+
+  The rover must detect obstacles and report its final position and orientation.
+
+  ⚙️ Features
+
+ ✅ Well-structured modular code
+ ✅ Command Pattern to execute rover moves
+ ✅ Logging mechanism with timestamps
+ ✅ Exception handling for invalid inputs & grid boundaries
+ ✅ Obstacle detection & safe movement
+ ✅ No infinite loops (dynamic command input)
+ ✅ Easily extensible for new features
+
+ ## Run Instructions
+
+### 1. Install Dependencies
+npm install
+
+2. Run in Development Mode
+   npm run start
+
+Example Input
+
+Grid Size: 10 x 10
+
+Starting Position: (0, 0, N)
+
+Commands: MMRMLM
+
+Obstacles: (2, 9), (5, 5)
+
+Example Output
+
+Final Position: (3, 2, E)
+Status Report: "Rover is at (3, 2) facing East. No Obstacles detected."
 
     
