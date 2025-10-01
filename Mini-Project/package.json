@@ -1,0 +1,14 @@
+{
+  "name": "mars-rover",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node --loader ts-node/esm Mars-rover/main.ts",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^24.6.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
