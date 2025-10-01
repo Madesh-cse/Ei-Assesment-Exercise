@@ -101,16 +101,17 @@ Viewer → read
 
  ----------------------------------------------------------------------------------------------------
 
- How to Run a TypeScript Program with ts-node (ESM)
+ How to Run the Programs
+ 
+1. Install Dependencies
+   npm install
 
-  1. Install ts-node and TypeScript (if not already installed)
-     npm install -D ts-node typescript
-     
-  2. Run the program using the ESM loader:
-     node --loader ts-node/esm path/to/your/file.ts
+2 . Run in the Terminal
+    npm run start:strategy
+    npm run start:observer
 
-  3. Example for your Strategy Pattern program:
-     node --loader ts-node/esm DesignPattern/BehaviouralPatternDesign/Strategy-Pattern/main.ts
+3.  git clone command
+    git clone https://github.com/yourusername/DesignPatterns.git
 ---------------------------------------------------------------------------------------------------------
 
 🛰️# Exercise 2: Problem Statements for Mini-projects – Mars Rover Simulation  
