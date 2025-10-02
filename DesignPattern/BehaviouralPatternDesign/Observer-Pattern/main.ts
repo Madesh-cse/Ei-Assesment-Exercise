@@ -17,7 +17,7 @@ rider1.requestDriver();
 rider2.requestDriver();
 rider3.requestDriver();
 
-console.log("\n✅ Driver Madesh accepts the ride");
+console.log("Driver Madesh accepts the ride");
 rider1.removeDriver(driver1);
 
 rider1.requestDriver();

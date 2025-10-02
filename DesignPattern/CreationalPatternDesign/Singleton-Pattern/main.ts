@@ -3,8 +3,6 @@ import { CacheManagement } from "./CacheManagement.js";
 const cache1 = CacheManagement.getInstance();
 const cache2 = CacheManagement.getInstance();
 
-console.log(cache1 === cache2); // true (Singleton)
-
 // Time to live is 5 seconds
 cache1.set("user1", { name: "Madesh", age: 25 }, 5);
 cache1.set("user2", { name: "Naveen", age: 30 });
